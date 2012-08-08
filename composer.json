@@ -10,7 +10,6 @@
 		"zf2",
 		"orm",
 		"migrations",
-		"data-fixtures"
 	],
 	"authors": [
 		{
@@ -27,7 +26,7 @@
 	
 	"autoload": {
 		"psr-0": {
-			"DoctrineTool": "src/"
+			"DoctrineTools": "src/"
 		}
 	},
 	
@@ -37,7 +36,8 @@
 	
 	"require": {
 		"php": ">5.4",
-		"doctrine/migrations": "dev-master",
+		"doctrine/migrations": "dev-master@dev",
+		"doctrine/doctrine-orm": ">2.x",
 		"zendframework/zendframework": "2.*@RC"
 	}
 	
