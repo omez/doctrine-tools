@@ -16,7 +16,7 @@ trait GettersTrait {
 	 * Default prefix for invokable getters
 	 * @var string
 	 */
-	const INVOKABLE_GETTER_PREFIX = 'get';
+	static $INVOKABLE_GETTER_PREFIX = 'get';
 	
 	/**
 	 * Returns name of getter method for $property
@@ -25,7 +25,7 @@ trait GettersTrait {
 	 * @return string
 	 */
 	protected function __getPropertyGetterName($property) {
-		return self::INVOKABLE_GETTER_PREFIX . Utils::property2method($property);
+		return self::$INVOKABLE_GETTER_PREFIX . Utils::property2method($property);
 	}
 
 	/**

@@ -16,7 +16,7 @@ trait SettersTrait {
 	 * Default prefix for invokable setters
 	 * @var string
 	 */
-	const INVOKABLE_SETTER_PREFIX = 'set';
+	static $INVOKABLE_SETTER_PREFIX = 'set';
 	
 	/**
 	 * Returns name of setter method for $property
@@ -25,7 +25,7 @@ trait SettersTrait {
 	 * @return string
 	 */
 	protected function __getPropertySetterName($property) {
-		return self::INVOKABLE_SETTER_PREFIX . Utils::property2method($property);
+		return self::$INVOKABLE_SETTER_PREFIX . Utils::property2method($property);
 	}
 
 	/**
