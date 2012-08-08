@@ -1,6 +1,7 @@
 .*
 composer.lock
 vendor
+incubator
 !.git
 !.gitignore
 !.gitmodules
