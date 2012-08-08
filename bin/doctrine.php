@@ -1,14 +1,12 @@
 <?php
-
 use Zend\ServiceManager\ServiceManager;
-use Symfony\Component\Console\Input\ArgvInput;
 
 ini_set('display_errors', true);
 
 /**
  * Before running of this script variable $serviceManager should be set
  *
- * @var $serviceManager $serviceManager
+ * @var $serviceManager Zend\ServiceManager\ServiceManager
  */
 $serviceManager = include __DIR__.'/doctrine-boot.php';
 

@@ -1,11 +1,11 @@
 <?php
-namespace Doctrine2zf;
+namespace DoctrineTools;
 
 use Zend\Mvc\Application;
 use Zend\ServiceManager\ServiceManager;
 
 
-if (!function_exists('lookForBasePath')) {
+if (!function_exists('DoctrineTools\lookForBasePath')) {
 	function lookForBasePath($path, $from = __DIR__) {
 		$previousFrom = $from;
 		while (true) {
@@ -36,7 +36,7 @@ if ($basePath !== false) {
 }
 
 
-$basePath = lookfor('config/application.config.php');
+$basePath = lookForBasePath('config/application.config.php');
 if ($basePath !== false) {
 	chdir($basePath);
 	
