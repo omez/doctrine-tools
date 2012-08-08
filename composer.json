@@ -20,8 +20,7 @@
 	],
 	
 	"suggest": {
-		"doctrine/doctrine-orm-module": "*",
-		"doctrine/doctrine-module": "*"
+		"doctrine/doctrine-orm-module": "*"
 	},
 	
 	"autoload": {
