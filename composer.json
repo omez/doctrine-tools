@@ -1,0 +1,44 @@
+{
+	"name": "omez/doctrine-tools",
+	"type": "library",
+	"version": "0.1.1-dev",
+	"description": "Doctrine2 tools and helper classes",
+	"license": "MIT",
+	"keywords": [
+		"doctrine",
+		"module",
+		"zf2",
+		"orm",
+		"migrations",
+		"data-fixtures"
+	],
+	"authors": [
+		{
+			"name": "Alexander Sergeychik",
+			"email": "alexander.sergeychik@gmail.com",
+			"homepage": "http://sergeychik.com"
+		}
+	],
+	
+	"suggest": {
+		"doctrine/doctrine-orm-module": "*",
+		"doctrine/doctrine-module": "*"
+	},
+	
+	"autoload": {
+		"psr-0": {
+			"DoctrineTool": "src/"
+		}
+	},
+	
+	"bin": [
+		"bin/doctrine"
+	],
+	
+	"require": {
+		"php": ">5.4",
+		"doctrine/migrations": "dev-master",
+		"zendframework/zendframework": "2.*@RC"
+	}
+	
+}
