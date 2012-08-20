@@ -1,7 +1,7 @@
 {
 	"name": "omez/doctrine-tools",
 	"type": "library",
-	"version": "0.1.2-beta2",
+	"version": "0.1.2-beta3",
 	"description": "Doctrine2 tools and helper classes",
 	"license": "MIT",
 	"keywords": [
