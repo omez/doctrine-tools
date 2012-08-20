@@ -4,6 +4,7 @@ namespace DoctrineTools;
 use Zend\Mvc\Application;
 use Zend\ServiceManager\ServiceManager;
 
+echo "Boot CLI engine...\n";
 
 if (!function_exists('DoctrineTools\lookForBasePath')) {
 	function lookForBasePath($path, $from = __DIR__) {

@@ -10,6 +10,10 @@ ini_set('display_errors', true);
  */
 $serviceManager = include __DIR__.'/doctrine-boot.php';
 
+
+
+echo "Loading CLI environment...\n";
+
 if (!isset($serviceManager)) {
 	throw new RuntimeException('Service manager not set');
 } elseif (!$serviceManager instanceof ServiceManager) {
